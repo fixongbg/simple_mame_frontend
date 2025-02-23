@@ -5,5 +5,5 @@ if [[ $(tty) == /dev/tty1 ]] ; then
     /opt/galauncher/startfe.sh
 ##  sudo gasetup
 ##  /opt/gasetup/login.sh
-    python /home/arcade/simple_mame_frontend/simple.py
+    python3 /home/arcade/simple_mame_frontend/simple.py
 fi
