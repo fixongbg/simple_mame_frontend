@@ -24,7 +24,7 @@ Disable default frontend in GroovyArcade.
 ```
 sudo nano /home/arcade/shared/configs/ga.conf
 ```
-Comment out the frontend and add path to the new frontend `simple.py`.
+Comment out `sudo gasetup` and `/opt/gasetup/login.sh` and add path to the new frontend `simple.py` at the bottom.
 ```
 #!/bin/bash
 
