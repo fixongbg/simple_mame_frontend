@@ -14,14 +14,28 @@ Install `git` if you haven't already:
 ```
 sudo pacman git
 ```
-Disable and replace default frontend. Set it to autostart.
+Download frontend.
 ```
 cd /home/arcade/
 sudo git clone https://github.com/fixongbg/simple_mame_frontend.git
-sudo rm /home/arcade/shared/configs/ga.conf
-sudo rm /home/arcade/.bash_profile
-sudo mv /home/arcade/simple_mame_frontend/ga.conf /home/arcade/shared/configs/
-sudo mv /home/arcade/simple_mame_frontend/.bash_profile /home/arcade/
+sudo chown -R arcade:arcade simple_mame_frontend
+sudo chmod 777 -R simple_mame_frontend
+```
+Disable default frontend in GroovyArcade.
+```
+sudo nano /home/arcade/shared/configs/ga.conf
+```
+Comment out the frontend and add path to the new frontend `simple.py`.
+```
+#!/bin/bash
+
+if [[ $(tty) == /dev/tty1 ]] ; then
+    sudo setterm --powerdown 0 --blank 0
+    /opt/galauncher/startfe.sh
+##  sudo gasetup
+##  /opt/gasetup/login.sh
+    python /home/arcade/simple_mame_frontend/simple.py
+fi
 ```
 Edit frontend script
 ```
