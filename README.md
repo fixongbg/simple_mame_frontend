@@ -53,3 +53,7 @@ VISIBLE_ITEMS = 20
 # # Adjust this to control the left position of the list.
 PADDING = 5 
 ```
+Clean up.
+```
+sudo rm /home/arcade/simple_mame_frontend/screenshot.jpg
+```
