@@ -25,7 +25,7 @@ sudo mv /home/arcade/simple_mame_frontend/.bash_profile /home/arcade/
 ```
 Edit frontend script to your paths and set parameters to your liking.
 ```
-sudo nano /home/arcade/simple_mame_frontend/
+sudo nano /home/arcade/simple_mame_frontend/simple.py
 ```
 `MAME_CMD` - Commando to start GroovyMAME.
 <br>
