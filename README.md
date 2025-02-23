@@ -28,8 +28,11 @@ Edit frontend script to your paths and set parameters to your liking.
 sudo nano /home/arcade/simple_mame_frontend/
 ```
 `MAME_CMD` - Commando to start GroovyMAME.
+<br>
 `ROMS_DIR` - Path to your roms folder.
-`VISIBLE_ITEMS` - Set number of roms visible in the list. 
+<br>
+`VISIBLE_ITEMS` - Number of visible items in the list. 
+ <br>
  `PADDING` - Adjust this to control the left position of the list
 ```
 # Path to your MAME executable and ROMs directory
