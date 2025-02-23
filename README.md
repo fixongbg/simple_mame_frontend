@@ -23,11 +23,11 @@ sudo rm /home/arcade/.bash_profile
 sudo mv /home/arcade/simple_mame_frontend/ga.conf /home/arcade/shared/configs/
 sudo mv /home/arcade/simple_mame_frontend/.bash_profile /home/arcade/
 ```
-Edit frontend script to your paths and set parameters to your liking.
+Edit frontend script
 ```
 sudo nano /home/arcade/simple_mame_frontend/simple.py
 ```
-This is pretty self-explanatory.
+Change paths and parameters to your liking.
 ```
 # Path to your MAME executable and ROMs directory
 MAME_CMD = "SDL_VIDEODRIVER=kmsdrm /usr/lib/mame/groovymame -switchres"
