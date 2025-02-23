@@ -18,8 +18,7 @@ Download frontend.
 ```
 cd /home/arcade/
 sudo git clone https://github.com/fixongbg/simple_mame_frontend.git
-sudo chown -R arcade:arcade simple_mame_frontend
-sudo chmod 777 -R simple_mame_frontend
+sudo chmod 777 /home/arcade/simple_mame_frontend/simple.py
 ```
 Disable default frontend in GroovyArcade.
 ```
@@ -56,4 +55,5 @@ PADDING = 5
 Clean up.
 ```
 sudo rm /home/arcade/simple_mame_frontend/screenshot.jpg
+sudo rm /home/arcade/simple_mame_frontend/README.md
 ```
