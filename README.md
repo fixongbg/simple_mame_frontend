@@ -12,7 +12,7 @@ Run these commands to replace and autostart into this frontend in GroovyArcade.
 <br>
 Install `git` if you haven't already:
 ```
-sudo pacman git
+ sudo pacman -Sy git
 ```
 Download frontend.
 ```
