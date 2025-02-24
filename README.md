@@ -24,6 +24,18 @@ Disable default frontend in GroovyArcade.
 ```
 sudo nano /home/arcade/shared/configs/ga.conf
 ```
+Comment out `frontend`
+```
+##frontend=attractplus
+video.backend=KMS
+monitor=generic_15
+kernel_video_cmdline=monitor=generic_15 video=VGA-1:640x480iS
+connector=VGA-1
+```
+Disable default frontend in GroovyArcade.
+```
+sudo nano /home/arcade/shared/configs/ga.conf
+```
 Comment out `sudo gasetup` and `/opt/gasetup/login.sh` and add path to the new frontend `smf.py` at the bottom.
 ```
 #!/bin/bash
