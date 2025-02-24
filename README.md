@@ -18,13 +18,13 @@ Download frontend.
 ```
 cd /home/arcade/
 sudo git clone https://github.com/fixongbg/simple_mame_frontend.git
-sudo chmod 777 /home/arcade/simple_mame_frontend/simple.py
+sudo chmod 777 /home/arcade/simple_mame_frontend/smf.py
 ```
 Disable default frontend in GroovyArcade.
 ```
 sudo nano /home/arcade/shared/configs/ga.conf
 ```
-Comment out `sudo gasetup` and `/opt/gasetup/login.sh` and add path to the new frontend `simple.py` at the bottom.
+Comment out `sudo gasetup` and `/opt/gasetup/login.sh` and add path to the new frontend `smf.py` at the bottom.
 ```
 #!/bin/bash
 
@@ -33,12 +33,12 @@ if [[ $(tty) == /dev/tty1 ]] ; then
     /opt/galauncher/startfe.sh
 ##  sudo gasetup
 ##  /opt/gasetup/login.sh
-    python /home/arcade/simple_mame_frontend/simple.py
+    python /home/arcade/simple_mame_frontend/smf.py
 fi
 ```
 Edit frontend script
 ```
-sudo nano /home/arcade/simple_mame_frontend/simple.py
+sudo nano /home/arcade/simple_mame_frontend/smf.py
 ```
 Change paths and parameters to your liking.
 ```
