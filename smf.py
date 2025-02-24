@@ -3,7 +3,7 @@ import curses
 import subprocess
 
 # Path to your MAME executable and ROMs directory
-MAME_CMD = "SDL_VIDEODRIVER=kmsdrm /usr/lib/mame/groovymame -switchres"
+MAME_CMD = "/usr/lib/mame/groovymame"
 ROMS_DIR = "/home/arcade/shared/roms/mame"
 
 # Number of visible items in the list
