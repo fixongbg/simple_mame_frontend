@@ -7,10 +7,10 @@ MAME_CMD = "/usr/lib/mame/groovymame"
 ROMS_DIR = "/home/arcade/shared/roms/mame"
 
 # Number of visible items in the list
-VISIBLE_ITEMS = 20  
+VISIBLE_ITEMS = 13
 
 # # Adjust this to control the left position of the list.
-PADDING = 5 
+PADDING = 2
 
 ROMS_DIR = os.path.expanduser(ROMS_DIR)
 ROM_TITLES_FILE = "rom_titles.txt"
@@ -93,21 +93,31 @@ def main(stdscr):
     
     y_start = max(0, (h - VISIBLE_ITEMS) // 2)
     
+    
     def draw_list():
         stdscr.erase()
+        h, w = stdscr.getmaxyx()  # Get the actual terminal size
+
         for i in range(VISIBLE_ITEMS):
             rom_idx = top_index + i
             if rom_idx >= len(roms):
                 break
             y = y_start + i
-            
+
+            # Prevent drawing outside the screen
+            if y >= h:
+                break
+        
+            max_available_width = w - PADDING - 2
             rom_name = truncate_text(roms[rom_idx][1], max_available_width)
-            
+        
             if rom_idx == index:
-                stdscr.addstr(y, PADDING, "> " + rom_name, curses.A_REVERSE)
+                stdscr.addstr(y, PADDING, "> " + rom_name[:max_available_width], curses.A_REVERSE)
             else:
-                stdscr.addstr(y, PADDING, "  " + rom_name)
+                stdscr.addstr(y, PADDING, "  " + rom_name[:max_available_width])
+    
         stdscr.refresh()
+
     
     draw_list()
     
