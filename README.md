@@ -59,7 +59,7 @@ if [[ $(tty) == /dev/tty1 ]] ; then
     python /home/arcade/simple_mame_frontend/smf.py
 fi
 ```
-Edit frontend script paramters (if needed).
+Edit frontend script parameters (if needed).
 ```
 sudo nano /home/arcade/simple_mame_frontend/smf.py
 ```
