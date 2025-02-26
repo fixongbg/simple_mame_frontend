@@ -3,6 +3,12 @@ This frontend is just a list of your roms. Pick a game and play.
 <br>
 This guide is tailored for GroovyArcade but could be used elsewhere. Remember to adjust resolution to your liking under `gasetup`. 
 <br>
+Press `up/down` to pick a game.
+<br>
+Press `left/right` to go the next/previous character. 
+<br>
+Press `esc` to `shutdown` or `Exit to shell`.
+<br>
 <br>
 **DISCLAIMER!**
 <br>
