@@ -1,7 +1,7 @@
 # Simple MAME Frontend
-This frontend is just a list of your roms. Pick a game and play. It's not perfect but it works. Again, simple. 
+This frontend is just a list of your roms. Pick a game and play. It's not perfect but it works.
 <br>
-This is for GroovyArcade. Resolution should be set to `320x240p` in `gasetup`. 
+This is for GroovyArcade. Adjust resolution to your liking under `gasetup`. 
 <br>
 <br>
 ![screenshot](screenshot.jpg) 
@@ -19,6 +19,7 @@ Download frontend.
 cd /home/arcade/
 sudo git clone https://github.com/fixongbg/simple_mame_frontend.git
 sudo chmod 777 /home/arcade/simple_mame_frontend/smf.py
+sudo chmod 777 /home/arcade/rom_titles.txt
 ```
 Disable default frontend in GroovyArcade.
 ```
