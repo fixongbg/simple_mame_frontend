@@ -7,7 +7,7 @@ MAME_CMD = "/usr/lib/mame/groovymame"
 ROMS_DIR = "/home/arcade/shared/roms/mame"
 
 # Number of visible items in the list
-VISIBLE_ITEMS = 13
+VISIBLE_ITEMS = 16
 
 # # Adjust this to control the left position of the list.
 PADDING = 1
