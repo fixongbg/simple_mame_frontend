@@ -6,7 +6,7 @@ This guide is tailored for GroovyArcade but could be used elsewhere. Remember to
 <br>
 **DISCLAIMER!**
 <br>
-I'm no programmer. This python script was made using ChatGPT, therefore I don't know the in's and out's of this code but it works!
+I'm not a programmer. This python script was made using ChatGPT, therefore I don't know the in's and out's of this code but it works!
 <br>
 <br>
 ![screenshot](screenshot.jpg) 
