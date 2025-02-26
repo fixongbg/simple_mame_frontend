@@ -13,7 +13,7 @@ VISIBLE_ITEMS = 13
 PADDING = 2
 
 ROMS_DIR = os.path.expanduser(ROMS_DIR)
-ROM_TITLES_FILE = "rom_titles.txt"
+ROM_TITLES_FILE = "/home/arcade/simple_mame_frontend/rom_titles.txt"
 
 def load_rom_titles(filename=ROM_TITLES_FILE):
     rom_titles = {}
