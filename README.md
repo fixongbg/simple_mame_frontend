@@ -1,11 +1,15 @@
 # Simple MAME Frontend
-This frontend is just a list of your roms. Pick a game and play. This guide is tailored for GroovyArcade but could be used elsewhere. Remember to adjust resolution to your liking under `gasetup`. 
+This frontend is just a list of your roms. Pick a game and play!
+<br>
+<br>
+This guide is tailored for GroovyArcade but could be used elsewhere. Remember to adjust resolution to your liking under `gasetup`. 
+<br>
 <br>
 Press `up/down` to pick a game.
 <br>
 Press `left/right` to go the next/previous character. 
 <br>
-Press `esc` to `shutdown` or `Exit to shell`.
+Press `esc` to `Shutdown` or `Exit to shell`.
 <br>
 <br>
 **DISCLAIMER!**
@@ -66,10 +70,10 @@ MAME_CMD = "/usr/lib/mame/groovymame"
 ROMS_DIR = "/home/arcade/shared/roms/mame"
 
 # Number of visible items in the list
-VISIBLE_ITEMS = 13
+VISIBLE_ITEMS = 16
 
 # # Adjust this to control the left position of the list.
-PADDING = 2
+PADDING = 1
 ```
 Clean up.
 ```
