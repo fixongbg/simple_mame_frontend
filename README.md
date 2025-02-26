@@ -55,14 +55,14 @@ sudo nano /home/arcade/simple_mame_frontend/smf.py
 Change paths and parameters to your liking.
 ```
 # Path to your MAME executable and ROMs directory
-MAME_CMD = "SDL_VIDEODRIVER=kmsdrm /usr/lib/mame/groovymame -switchres"
+MAME_CMD = "/usr/lib/mame/groovymame"
 ROMS_DIR = "/home/arcade/shared/roms/mame"
 
 # Number of visible items in the list
-VISIBLE_ITEMS = 20  
+VISIBLE_ITEMS = 13
 
 # # Adjust this to control the left position of the list.
-PADDING = 5 
+PADDING = 2
 ```
 Clean up.
 ```
