@@ -2,7 +2,7 @@
 This frontend is just a list of your roms. Pick a game and play!
 <br>
 <br>
-This guide is tailored for GroovyArcade so remember to adjust resolution to your liking under `sudo gasetup`. 
+This guide is tailored for GroovyArcade (which uses GroovtMAME) so remember to adjust resolution to your liking under `sudo gasetup`. 
 <br>
 You can of course use this frontend with any other version of Mame.
 <br>
