@@ -10,7 +10,7 @@ ROMS_DIR = "/home/arcade/shared/roms/mame"
 VISIBLE_ITEMS = 13
 
 # # Adjust this to control the left position of the list.
-PADDING = 2
+PADDING = 1
 
 ROMS_DIR = os.path.expanduser(ROMS_DIR)
 ROM_TITLES_FILE = "/home/arcade/simple_mame_frontend/rom_titles.txt"
