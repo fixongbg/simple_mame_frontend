@@ -7,6 +7,9 @@ This guide is tailored for GroovyArcade (which uses GroovyMAME) so remember to a
 You can of course use this frontend with any other version of Mame.
 <br>
 <br>
+This frontend is looking at your roms under `/home/arcade/shared/roms/mame` and displaying them in a list. You can control the number of visible games and the left padding of the list. This is to make sure you have some control to position the list where you want it. How you change these parameters is explained down below.
+<br>
+<br>
 Press `up/down` to pick a game.
 <br>
 Press `left/right` to go the next/previous character. 
