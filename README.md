@@ -1,13 +1,10 @@
 # Simple MAME Frontend
-This frontend is just a list of your roms. Pick a game and play. It's not perfect but it works.
+This frontend is just a list of your roms. Pick a game and play.
 <br>
-This is for GroovyArcade. Adjust resolution to your liking under `gasetup`. 
+This guide is tailored for GroovyArcade but could be used elsewhere. Remember to adjust resolution to your liking under `gasetup`. 
 <br>
 <br>
 ![screenshot](screenshot.jpg) 
-<br>
-<br>
-Run these commands to replace and autostart into this frontend in GroovyArcade.
 <br>
 <br>
 Install `git` if you haven't already:
