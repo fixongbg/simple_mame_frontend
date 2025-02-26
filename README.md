@@ -10,8 +10,7 @@ You can of course use this frontend with any other version of Mame.
 This frontend is looking at your roms under `/home/arcade/shared/roms/mame` and displaying them in a list. You can control the number of visible games and the left padding of the list. This is to make sure you have some control to position the list where you want it. How you change these parameters is explained down below.
 <br>
 <br>
-Along with the frontend script there's also a `rom_titles.txt` file that contains every rom out there with the correct title.<br>
-This will make `akatana.zip` look like `Akai Katana` for example. 
+Along with the frontend script there's also a `rom_titles.txt` file that contains every rom out there with the correct title. The script looks into this .txt file and changes the `<romname>` to it's proper title in the frontend. This will make `akatana.zip` look like `Akai Katana` for example. 
 <br>
 <br>
 Press `up/down` to pick a game.
