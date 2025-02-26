@@ -1,7 +1,5 @@
 # Simple MAME Frontend
-This frontend is just a list of your roms. Pick a game and play.
-<br>
-This guide is tailored for GroovyArcade but could be used elsewhere. Remember to adjust resolution to your liking under `gasetup`. 
+This frontend is just a list of your roms. Pick a game and play. This guide is tailored for GroovyArcade but could be used elsewhere. Remember to adjust resolution to your liking under `gasetup`. 
 <br>
 Press `up/down` to pick a game.
 <br>
