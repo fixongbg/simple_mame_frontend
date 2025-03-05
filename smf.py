@@ -9,7 +9,7 @@ ROMS_DIR = "/home/arcade/shared/roms/mame"
 # Number of visible items in the list
 VISIBLE_ITEMS = 16
 
-# # Adjust this to control the left position of the list.
+# Adjust this to control the left position of the list.
 PADDING = 1
 
 ROMS_DIR = os.path.expanduser(ROMS_DIR)
@@ -35,7 +35,8 @@ def get_rom_list():
         return []
     roms = sorted(os.listdir(ROMS_DIR))
     roms_no_ext = {os.path.splitext(rom)[0]: rom for rom in roms}
-    return [(roms_no_ext[rom], rom_titles.get(rom.lower(), rom)) for rom in roms_no_ext]
+    rom_list = [(roms_no_ext[rom], rom_titles.get(rom.lower(), rom)) for rom in roms_no_ext]
+    return sorted(rom_list, key=lambda x: x[1].lower())
 
 def run_mame(rom):
     subprocess.run(f"{MAME_CMD} {rom} > /dev/null 2>&1", shell=True)
